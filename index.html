@@ -2,8 +2,44 @@
 <html>
 	<head>
 		<title>MSNGR</title>
+
+		<!-- Messenger -->
+		<link rel="stylesheet" type="text/css" href="lib/css/messenger.css">
+
+		<!-- Font Awesome -->
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	</head>
 	<body>
-		
+
+		<!-- jQuery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+		<!-- Progress Bar -->
+		<script src="lib/js/progressbar.min.js"></script>
+
+		<!-- Messenger -->
+		<script src="lib/js/messenger.js"></script>
+
+		<script>
+
+			var messenger = new Messenger();
+			messenger.run({
+				'id':'99401', // This value needs to be unique
+				'name':'alpha', // This value needs to be unique
+				'title':'Hello world...', // title
+				'message':'How are you doing today?', // content
+				'duration':4500, // duration of timer | if null, close box will apear
+				'theme':'light', // only one theme currently...
+				'icon':'bolt', // font awesome value fa-{value}
+				'location':'bottom-right', // top-right | bottom-right | bottom-left | top-left
+				'button':{ // didn't get to this yet...
+					'title':'',
+					'link':''
+				}
+			});
+
+		</script>
+
 	</body>
 </html>
